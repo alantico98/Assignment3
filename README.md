@@ -30,7 +30,7 @@ git --version
 wsl --version
 ```
 
-### 5. Docker Installed (for containerized setup)
+### 5. Docker Installed (required)
 
 ```bash
 docker --version
@@ -43,8 +43,8 @@ Follow these steps to run the app locally (using Docker):
 1. Clone the repo using bash (if on Windows, use WSL that allows for ssh cloning):
 
     bash
-    git clone git@github.com:alantico98/COMP_4705_Adv_Topics_MLOps_Assignments.git
-    (If not already done) cd COMP_4705_Adv_Topics_MLOps_Assignments
+    git clone git@github.com:alantico98/Assignment3.git
+    (If not already done) cd Assignment3
 
 2. (Optional ) Create a virtual environment (Skip this if you're only running the app via Docker)
 
@@ -61,8 +61,10 @@ Follow these steps to run the app locally (using Docker):
 
     make run
     
-    Navigate to Local URL: https://localhost:8501
+    Using Postman Desktop, send a request to http://0.0.0:8000/health to check that the
+    server is running and healthy
 
 5. Stop and Clean Up (using WSL or Mac)
 
+    make stop
     make clean
