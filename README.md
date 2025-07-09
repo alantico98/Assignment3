@@ -71,16 +71,15 @@ make build
 4. Run the Container (using WSL or Mac)
 
 ```bash    
-    make run
+make run
 ```
-    
     Using Postman Desktop, send a request to http://0.0.0:8000/health to check that the
     server is running and healthy
 
 5. Stop and Clean Up (using WSL or Mac)
 
 ```bash    
-    make stop
+make stop
     
-    make clean
+make clean
 ```
