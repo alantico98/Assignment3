@@ -42,35 +42,45 @@ Follow these steps to run the app locally (using Docker):
 
 1. Clone the repo using bash (if on Windows, use WSL that allows for ssh cloning):
 
-    bash
-    
-    git clone git@github.com:alantico98/Assignment3.git
-    
-    (If not already done) cd Assignment3
+```bash
+bash
+
+git clone git@github.com:alantico98/Assignment3.git
+
+cd Assignment3
+```
 
 2. (Optional ) Create a virtual environment (Skip this if you're only running the app via Docker)
 
-    python -m venv .venv
-    
-    source .venv\Scripts\activate # If using Windows
-    
-    source .venv/Scripts/activate # If using Git-bash or WSL on Windows
-    
-    source .venv/bin/activate     # If using Linux
+```bash
+python -m venv .venv
+
+source .venv\Scripts\activate # If using Windows
+
+source .venv/Scripts/activate # If using Git-bash or WSL on Windows
+
+source .venv/bin/activate     # If using Linux
+```
 
 3. Build the image (using WSL or Mac)
 
-    make build
+```bash    
+make build
+```
 
 4. Run the Container (using WSL or Mac)
 
+```bash    
     make run
+```
     
     Using Postman Desktop, send a request to http://0.0.0:8000/health to check that the
     server is running and healthy
 
 5. Stop and Clean Up (using WSL or Mac)
 
+```bash    
     make stop
     
     make clean
+```
