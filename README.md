@@ -43,14 +43,19 @@ Follow these steps to run the app locally (using Docker):
 1. Clone the repo using bash (if on Windows, use WSL that allows for ssh cloning):
 
     bash
+    
     git clone git@github.com:alantico98/Assignment3.git
+    
     (If not already done) cd Assignment3
 
 2. (Optional ) Create a virtual environment (Skip this if you're only running the app via Docker)
 
     python -m venv .venv
+    
     source .venv\Scripts\activate # If using Windows
+    
     source .venv/Scripts/activate # If using Git-bash or WSL on Windows
+    
     source .venv/bin/activate     # If using Linux
 
 3. Build the image (using WSL or Mac)
@@ -67,4 +72,5 @@ Follow these steps to run the app locally (using Docker):
 5. Stop and Clean Up (using WSL or Mac)
 
     make stop
+    
     make clean
