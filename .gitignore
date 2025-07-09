@@ -1,0 +1,33 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables or secrets
+*.env
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Dataset and model (too large for GitHub and not needed in repo)
+sentiment_labels.pkl
+train_model.py
+
+# Docker/Build artifacts
+*.log
+*.pid
+*.tar
+*.bak
+
+# VSCode config (optional, if using VSCode)
+.vscode/

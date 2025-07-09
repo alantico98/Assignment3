@@ -1,0 +1,8 @@
+# Required libraries
+fastapi
+uvicorn
+pydantic
+numpy
+pandas
+scikit-learn
+joblib
